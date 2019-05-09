@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Algo project Visuals</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="styles.css" />
+	</head>
+<body>
+	<div id="content">
+		<h2>Visuals for algo project</h2>
+
+	    <div id="controls" class='clear'>
+
+	    		Wall Frequency:
+	    		<select class="form-control" id="selectWallFrequency">
+	    			<option value=".1">10%</option>
+	    			<option value=".2">20%</option>
+	    			<option value=".3">30%</option>
+	    			<option value=".4">40%</option>
+	    		</select>
+	    		<br />
+	    		Grid Size:
+	    		<select class="form-control" id="selectGridSize" name="selectGridSize">
+	    			<option value="30" selected="selected">30x30</option>
+	    		</select>
+	    		<br />
+	    		Allow diagonal movement?
+	    		<input class="" type="checkbox" name="searchDiagonal" id="searchDiagonal" />
+	    		<br />
+	    		Add random weights?
+	    		<input type="checkbox" name="generateWeights" id="generateWeights" />
+	    		<br />
+
+	    		<button id="btnGenerate" class="btn btn-success">Generate new map</button>
+
+				<br />
+	    </div>
+
+	    <div id="main" style="width:100%;">
+	    	<div style="width:100%;" id="search_grid"></div>
+	    </div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	<script type='text/javascript' src='../astar.js'></script>
+	<script type='text/javascript' src='./app.js'></script>
+</body>
+</html>
